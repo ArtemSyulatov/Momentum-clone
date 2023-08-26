@@ -1,0 +1,20 @@
+{
+  "name": "momentum-clone",
+  "version": "1.0.0",
+  "description": "![](assets/img/mdscreen.png)\r [link to original app in google web store](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?utm_source=ext_sidebar&hl=en-US)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemSyulatov/Momentum-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtemSyulatov/Momentum-clone/issues"
+  },
+  "homepage": "https://github.com/ArtemSyulatov/Momentum-clone#readme"
+}
