@@ -31,7 +31,7 @@ window.addEventListener("beforeunload", setLocalStorage2);
 
 function getLocalStorage2() {
   if (localStorage.getItem("city")) {
-    city.value = localStorage.getItem("city") ;
+    city.value = localStorage.getItem("city");
   }
   getWeather();
 }
