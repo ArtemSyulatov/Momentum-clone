@@ -12,9 +12,9 @@ let timeOfDay = getTimeOfDay();
 let img = new Image(); 
 function setBG() {
   if (randomNum >= 10) {
-    img.src = `https://raw.githubusercontent.com/ArtemSyulatov/imgs/assets/images/${timeOfDay}/${randomNum}.jpg`;
+    img.src = `../assets/img/${timeOfDay}/${randomNum}.jpg`;
   } else {
-    img.src = `https://raw.githubusercontent.com/ArtemSyulatov/imgs/assets/images/${timeOfDay}/0${randomNum}.jpg`;
+    img.src = `../assets/img/${timeOfDay}/0${randomNum}.jpg`;
   }
   img.onload = () => {
     document.body.style.backgroundImage = `url('${img.src}')`;
@@ -26,14 +26,14 @@ setBG();
 function getSlideNext() {
   if (randomNum == 20) {
     randomNum = 1;
-    img.src = `https://raw.githubusercontent.com/ArtemSyulatov/imgs/assets/images/${timeOfDay}/0${randomNum}.jpg`;
+    img.src = `../assets/img/${timeOfDay}/0${randomNum}.jpg`;
   }
   randomNum = randomNum + 1;
 
   if (randomNum >= 10 && randomNum <= 20) {
-    img.src = `https://raw.githubusercontent.com/ArtemSyulatov/imgs/assets/images/${timeOfDay}/${randomNum}.jpg`;
+    img.src = `../assets/img/${timeOfDay}/${randomNum}.jpg`;
   } else if (randomNum > 1 && randomNum < 10) {
-    img.src = `https://raw.githubusercontent.com/ArtemSyulatov/imgs/assets/images/${timeOfDay}/0${randomNum}.jpg`;
+    img.src = `../assets/img/${timeOfDay}/0${randomNum}.jpg`;
   }
   img.onload = () => {
     document.body.style.backgroundImage = `url('${img.src}')`;
@@ -42,13 +42,13 @@ function getSlideNext() {
 function getSlidePrev() {
   if (randomNum === 1) {
     randomNum = 20;
-    img.src = `https://raw.githubusercontent.com/ArtemSyulatov/imgs/assets/images/${timeOfDay}/${randomNum}.jpg`;
+    img.src = `../assets/img/${timeOfDay}/${randomNum}.jpg`;
   }
   randomNum = randomNum - 1;
   if (randomNum >= 10 && randomNum < 20) {
-    img.src = `https://raw.githubusercontent.com/ArtemSyulatov/imgs/assets/images/${timeOfDay}/${randomNum}.jpg`;
+    img.src = `../assets/img/${timeOfDay}/${randomNum}.jpg`;
   } else if (randomNum < 10 && randomNum >= 1) {
-    img.src = `https://raw.githubusercontent.com/ArtemSyulatov/imgs/assets/images/${timeOfDay}/0${randomNum}.jpg`;
+    img.src = `../assets/img/${timeOfDay}/0${randomNum}.jpg`;
   }
   img.onload = () => {
     document.body.style.backgroundImage = `url('${img.src}')`;
